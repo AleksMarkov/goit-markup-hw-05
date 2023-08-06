@@ -591,7 +591,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.03em;
   color: var(--NAVYBLUE);
 }
 
@@ -638,7 +638,7 @@ img {
 .modal-label {
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.05em;
   display: block;
   margin-bottom: 4px;
   color: #8e8f99;
@@ -665,7 +665,7 @@ img {
   color: var(--NAVYBLUE);
   font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.05em;
   padding: 8px 16px;
   background-color: transparent;
   outline: transparent;
@@ -675,26 +675,27 @@ img {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.05em;
 }
 .modal-check-text {
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.05em;
 
-  display: flex;
+  /* display: flex; */
   align-items: left;
   position: relative;
 }
 
 .modal-check-link {
   color: var(--IRIS);
-  line-height: 16px;
-  letter-spacing: 0.48px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
   text-decoration-line: underline;
 }
-
+/*
 .modal-check-text:before {
   content: "";
   width: 40px;
@@ -724,4 +725,30 @@ img {
 
 .modal-check:checked + .modal-check-text::before {
   background-color: rgb(203, 219, 163);
+} */
+
+/* working part */
+
+.modal-check-text span {
+  stroke-width: 1px;
+  stroke: rgba(46, 47, 66, 0.4);
+
+  width: 16px;
+  height: 16px;
+  /* margin-right: 12px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* fill: transparent; */
+  /* transition-duration: 300ms; */
 }
+/*
+.modal-check:checked + .modal-check-text span {
+  background-color: var(--accent-cl);
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-check:focus + .modal-check-text span {
+  border-color: var(--accent-cl);
+} */
