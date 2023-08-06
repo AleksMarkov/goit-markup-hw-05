@@ -650,14 +650,15 @@ img {
 }
 
 .modal-icon {
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 4px;
-  /* fill: var(--NAVYBLUE); */
+  fill: transparent;
+  fill: var(--NAVYBLUE);
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  /* transition: stroke 200ms ease; */
+  transition: stroke 200ms ease;
 }
 
 .modal-comment {
@@ -670,12 +671,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.48px;
   padding: 8px 16px;
+  /* 
+  background-color: transparent;
 
-  /* background-color: transparent; */
-
-  /* outline: transparent;
+   outline: transparent;
   transition: border-color 200ms ease;
-  resize: none; */
+  resize: none;  */
 }
 
 .modal-check-text {
