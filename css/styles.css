@@ -592,7 +592,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  color: var(--NAVYBLUE #2e2f42);
+  color: var(--NAVYBLUE);
 }
 
 .modal-title {
@@ -616,7 +616,6 @@ img {
   font-size: 14px;
   color: var(--NAVYBLUE);
   outline: transparent;
-  transition: border-color 200ms ease;
 }
 
 .modal-input:focus,
@@ -624,7 +623,11 @@ img {
   border-color: var(--IRIS);
 }
 
-.modal-input:focus + .modal-icon {
+/* .modal-input:focus + .modal-icon {
+  fill: var(--IRIS);
+} */
+
+.modal-input-wrap :focus-within + .modal-icon {
   fill: var(--IRIS);
 }
 
@@ -636,10 +639,8 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-
   display: block;
   margin-bottom: 4px;
-
   color: #8e8f99;
 }
 
@@ -654,7 +655,6 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: stroke 200ms ease;
 }
 
 .modal-comment {
@@ -662,15 +662,14 @@ img {
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  color: rgba(46, 47, 66, 0.4);
-  font-size: 12px;
+  color: var(--NAVYBLUE);
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.48px;
   padding: 8px 16px;
   background-color: transparent;
   outline: transparent;
-  /* transition: border-color 200ms ease; */
-  /* resize: none;  */
+  resize: none;
 }
 .modal-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -690,7 +689,7 @@ img {
 }
 
 .modal-check-link {
-  color: var(--IRIS, #4d5ae5);
+  color: var(--IRIS);
   line-height: 16px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
