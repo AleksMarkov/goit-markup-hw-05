@@ -623,16 +623,27 @@ img {
   border-color: var(--IRIS);
 }
 
-/* .modal-input:focus + .modal-icon {
-  fill: var(--IRIS);
-} */
-
 .modal-input-wrap :focus-within + .modal-icon {
   fill: var(--IRIS);
 }
-
-.modal-form-btn:disabled {
-  background-color: #4c4c4c;
+.modal-btn-box {
+}
+.modal-form-btn {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background-color: var(--IRIS);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .modal-label {
@@ -682,10 +693,11 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-
-  /* display: flex; */
-  align-items: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
   position: relative;
+  padding-bottom: 24px;
 }
 
 .modal-check-link {
@@ -695,60 +707,19 @@ img {
   letter-spacing: 0.05em;
   text-decoration-line: underline;
 }
-/*
-.modal-check-text:before {
-  content: "";
-  width: 40px;
-  height: 22px;
-  border: 1px solid #c8c5c5;
-  border-radius: 50px;
-  margin-right: 8px;
-  transition-duration: 300ms;
-}
-
-.modal-check-text::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 18px;
-  height: 18px;
-  background-color: #b5b1b1;
-  border-radius: 50%;
-  transition-duration: 300ms;
-}
-
-.modal-check:checked + .modal-check-text::after {
-  transform: translate(18px);
-  background-color: #ffffff;
-}
-
-.modal-check:checked + .modal-check-text::before {
-  background-color: rgb(203, 219, 163);
-} */
-
-/* working part */
-
 .modal-check-text span {
-  stroke-width: 1px;
-  stroke: rgba(46, 47, 66, 0.4);
-
+  border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
-  /* margin-right: 12px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* fill: transparent; */
-  /* transition-duration: 300ms; */
-}
-/*
-.modal-check:checked + .modal-check-text span {
-  background-color: var(--accent-cl);
-  border: none;
-  fill: #ffffff;
+  margin-right: 8px;
+  fill: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 250ms;
 }
 
-.modal-check:focus + .modal-check-text span {
-  border-color: var(--accent-cl);
-} */
+.modal-check:checked + .modal-check-text span {
+  border: none;
+  fill: var(--OCEAN);
+}
