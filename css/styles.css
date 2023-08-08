@@ -409,6 +409,9 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
+.footer-social {
+  margin-right: 80px;
+}
 .footer-social > .socialnet-list {
   display: flex;
   gap: 16px;
@@ -421,8 +424,6 @@ img {
 }
 .socialnet-icon-svgfooter {
   fill: #f4f4fd;
-}
-.footer-subscribe {
 }
 .footer-form {
   display: flex;
@@ -757,9 +758,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: left; */
   position: relative;
 }
 .modal-check-span {
@@ -784,8 +785,8 @@ img {
   text-decoration-line: underline;
 }
 
-.modal-check:checked + .modal-check-span {
+.modal-check:checked + .modal-check-text .modal-check-span {
   border: none;
-  fill: var(--CLOUD);
   background-color: var(--OCEAN);
+  fill: var(--CLOUD);
 }
