@@ -442,13 +442,14 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .footer-input::placeholder {
   color: var(--WHITE);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.02em;
-  padding-left: 16px;
 }
 .footer-form-subscribebtn {
   display: flex;
