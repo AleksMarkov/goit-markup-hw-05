@@ -761,7 +761,6 @@ img {
   align-items: center;
   justify-content: left;
   position: relative;
-  /* padding-bottom: 24px; */
 }
 .modal-check-span {
   width: 16px;
@@ -784,17 +783,6 @@ img {
   letter-spacing: 0.05em;
   text-decoration-line: underline;
 }
-/* .modal-check-text span {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  fill: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 250ms;
-} */
 
 .modal-check:checked + .modal-check-span {
   border: none;
