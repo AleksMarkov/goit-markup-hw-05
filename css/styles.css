@@ -413,8 +413,6 @@ img {
   display: flex;
   gap: 16px;
 }
-.socialnet-icon-footer {
-}
 .socialnet-icon-footer:hover {
   background-color: #31d0aa;
 }
@@ -424,6 +422,65 @@ img {
 .socialnet-icon-svgfooter {
   fill: #f4f4fd;
 }
+.footer-subscribe {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  padding-left: 80px;
+}
+.footer-form {
+}
+.footer-input {
+  display: block;
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: var(--WHITE);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+.footer-input::placeholder {
+  color: var(--WHITE);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+}
+.footer-form-subscribebtn {
+  display: flex;
+  color: var(--WHITE);
+  background: var(--IRIS);
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+}
+.footer-form-icon {
+  display: flex;
+}
+.check-icon {
+  fill: var(--WHITE);
+}
+.footer-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+/*============================================================*/
 .products {
   padding-top: 96px;
   padding-bottom: 120px;
