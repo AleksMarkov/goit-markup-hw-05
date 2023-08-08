@@ -775,6 +775,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .modal-check-link {
   color: var(--IRIS);
@@ -783,7 +784,7 @@ img {
   letter-spacing: 0.05em;
   text-decoration-line: underline;
 }
-.modal-check-text span {
+/* .modal-check-text span {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
@@ -793,7 +794,7 @@ img {
   align-items: center;
   justify-content: center;
   transition-duration: 250ms;
-}
+} */
 
 .modal-check:checked + .modal-check-span {
   border: none;
